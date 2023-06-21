@@ -51,8 +51,6 @@ int main(){
 		for(int i = 1; i <= n; i++){
 			list.push(i);
 		}
-		list.print();
-		cout << endl;
 		list.head = list.reverseLinkedlist(list.head);
 		list.print();
 	} 
