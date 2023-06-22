@@ -104,9 +104,6 @@ int main(){
 		intersect(list1.head, list2.head, 5);
 		Node* temp1 = findIntersection(list1.head, list2.head);
 		cout << temp1 -> data << endl;
-		list1.print();
-		cout << endl;
-		list2.print();
 	} 
 }
 
