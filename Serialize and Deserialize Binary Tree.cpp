@@ -77,11 +77,13 @@ void print(Node* root){
     while(!q.empty()){
         Node* temp = q.front();
         q.pop();
-        cout << temp -> data << " ";
-        if(temp -> left){
-            q.push(temp -> left);
+        if(temp == NULL){
+            cout << -1 << ' ';
+        }else{
+            cout << temp -> data << ' ';
         }
-        if(temp -> right){
+        if(temp != NULL){
+            q.push(temp -> left);
             q.push(temp -> right);
         }
     }
